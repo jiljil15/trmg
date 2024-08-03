@@ -1,7 +1,6 @@
-version: "3"
 services:
   node-app:
-    image: msoliman50/tresmerge-docker
+    image: jiljil15/tressmergejil
     env_file:
       - ./.env
     deploy:
@@ -30,7 +29,7 @@ services:
       - mongo-db:/data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_PASSWORD: password
   # mongo-express:
   #   image: mongo-express
   #   restart: always
